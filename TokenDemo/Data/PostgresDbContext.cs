@@ -12,9 +12,11 @@ namespace TokenDemo.Data
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
-        {
+        {            
             base.OnModelCreating(builder);
+            
             builder.HasPostgresExtension("adminpack");
+            builder.HasDefaultSchema("test");
         }
     }
 }
