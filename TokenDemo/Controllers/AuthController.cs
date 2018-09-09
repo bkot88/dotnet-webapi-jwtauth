@@ -48,8 +48,8 @@ namespace TokenDemo.Controllers
                 };
 
                 var token = new JwtSecurityToken(
-                    issuer:"example.capital",
-                    audience: "example.capital",
+                    issuer:"domain.capital",
+                    audience: "domain.capital",
                     claims: claimsData,
                     signingCredentials: credentials,
                     expires: DateTime.UtcNow.AddHours(1));
