@@ -16,7 +16,7 @@ namespace TokenDemo.Data
             base.OnModelCreating(builder);
             
             builder.HasPostgresExtension("adminpack");
-            builder.HasDefaultSchema("test");
+            builder.HasDefaultSchema("public");
         }
     }
 }
