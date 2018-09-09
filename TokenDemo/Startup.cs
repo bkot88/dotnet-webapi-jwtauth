@@ -74,7 +74,6 @@ namespace TokenDemo
 
             SeedDatabase.Init(app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope().ServiceProvider);
 
-            app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseMvc();
         }
