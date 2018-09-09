@@ -1,3 +1,4 @@
 *.dll
 TokenDemo/bin/
 TokenDemo/obj/
+.vs/
